@@ -1,0 +1,57 @@
+Yet another types of variables
+
+1) Local :any variables that is declared inside of method or a block
+like while loop , for loop, if condition, or inside the construction are
+called Local variables
+Properties:
+- We can access them out side of the block
+    for example: if(2>1){
+                    int x=10//this variable will not be accessible outside
+                    }
+                    x=20//compiler error
+- As soon as we are done with method local variables wont work
+    and memory is freed and is available to be used by others programs
+
+2) instance variables: all of the variables which are declared outside of the methods or blocks or construction
+but inside the class are instance variables.
+Properties:
+- Memory is allocated inside RAM as soon as object of that class is created and stays in
+the memory unless we are done with the closing bracket.
+- They are highly discouraged because they waste are not efficient in handling memory.
+
+3)static variables: They are declared outside of the methods, constructor, and block of codes
+with a static keyword.
+
+Access Modifier: keyword(private, public protected) that help us reduce the visibility of our variables and methods
+so that no one else from other class or packages can modify our data.
+
+ Private: if we use private access modifier our variables or methods we can only access that variable
+ from same class
+ class Account{
+ private int balance;
+
+ void depositMoney(){
+ if(boolean properChannel, int money){
+ balance=balance+money
+ }
+ }
+ }
+ class hacker{
+ balance=100000 // compile error: cannot access
+ }
+
+ Default: its not a keyword, it is a behaviour which is assigned to the methods or property automatically
+ if we are not assigning any access modifier.
+
+package1;
+ class{
+ String car;
+ }
+ package2;
+ class family{
+ car="I am driving your car";
+ }
+ if we do not specify any modifiers, default behaviour will assigned to our variable
+ and methods and they will only be available within the same package.
+
+
